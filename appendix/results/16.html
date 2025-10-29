@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>16번 정답</title>
+</head>
+<style>
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 10px;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 30px;
+  }
+
+  /* 첫 번째 항목 */
+  li:first-child {
+    font-weight: bold;
+  }
+
+  /* 마지막 항목 */
+  li:last-child {
+    font-style: italic;
+  }
+
+  /* 홀수 항목 */
+  li:nth-child(odd) {
+    background-color: #f0f0f0;
+  }
+
+  /* 각 항목 앞에 아이콘 (가상 요소) */
+  li::before {
+    content: "▶";
+    position: absolute;
+    left: 10px;
+    color: #2196F3;
+  }
+
+  /* 링크 스타일 */
+  li a {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+  }
+
+  /* 호버 시 밑줄 애니메이션 */
+  li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2196F3;
+    transition: width 0.3s ease;
+  }
+
+  li a:hover::after {
+    width: 100%;
+  }
+
+  /* 방문한 링크 */
+  li a:visited {
+    color: #666;
+  }
+</style>
+
+<body>
+  <ul>
+    <li><a href="#1">첫 번째 항목</a></li>
+    <li><a href="#2">두 번째 항목</a></li>
+    <li><a href="#3">세 번째 항목</a></li>
+    <li><a href="#4">네 번째 항목</a></li>
+    <li><a href="#5">마지막 항목</a></li>
+  </ul>
+</body>
+
+</html>

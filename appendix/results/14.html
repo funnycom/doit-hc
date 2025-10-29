@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    /* 모바일 (기본): 1단 */
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .item {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    /* 태블릿: 2단 */
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* 데스크톱: 3단 */
+    @media (min-width: 1024px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>반응형 그리드</h1>
+    <div class="grid">
+      <div class="item">
+        <img src="https://picsum.photos/300/300?random=1" alt="랜덤 이미지 1">
+        <h3>아이템 1</h3>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/300/300?random=2" alt="랜덤 이미지 2">
+        <h3>아이템 2</h3>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/300/300?random=3" alt="랜덤 이미지 3">
+        <h3>아이템 3</h3>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12번 정답</title>
+  <style>
+    .gradient-box {
+      width: 300px;
+      height: 200px;
+      margin: 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* 1. 선형 그러데이션 (위→아래) */
+    .linear-gradient {
+      background: linear-gradient(to bottom, #2196F3, #4CAF50);
+      /* 또는 각도 사용: linear-gradient(180deg, #2196F3, #4CAF50); */
+    }
+
+    /* 2. 원형 그러데이션 */
+    .radial-gradient {
+      background: radial-gradient(circle, red, transparent);
+    }
+
+    /* 3. 대각선 다색 그러데이션 */
+    .multi-gradient {
+      background: linear-gradient(45deg,
+          #ff6b6b 0%,
+          #feca57 25%,
+          #48dbfb 50%,
+          #c44569 75%,
+          #5f27cd 100%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gradient-box linear-gradient">선형 그러데이션</div>
+  <div class="gradient-box radial-gradient">원형 그러데이션</div>
+  <div class="gradient-box multi-gradient">다색 그러데이션</div>
+</body>
+
+</html>

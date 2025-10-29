@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15</title>
+  <style>
+    /* .hero를 뷰포트의 가로/세로 정중앙에 배치 */
+    body {
+      margin: 0;
+      /* 기본 여백 제거 */
+      min-height: 100vh;
+      /* 전체 뷰포트 높이 사용 */
+      display: flex;
+      /* 플렉스 컨테이너로 설정 */
+      align-items: center;
+      /* 세로 중앙 */
+      justify-content: center;
+      /* 가로 중앙 */
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      /* 높이 방향 중앙 정렬 */
+      justify-content: center;
+      /* 가로 중앙 정렬 */
+      gap: 24px;
+    }
+
+    .title,
+    .image {
+      flex: 1;
+    }
+
+    /* 모바일에서 세로 스택 + 순서 변경 */
+    @media (max-width: 600px) {
+      .hero {
+        flex-direction: column;
+        /* 세로 쌓기 */
+        text-align: center;
+        /* 텍스트 중앙 정렬(선택) */
+      }
+
+      .image {
+        order: -1;
+        /* 이미지가 위로 올라오게 */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="title">
+      <h1>Welcome to My Site</h1>
+      <p>웹 표준을 지키는 깔끔한 구조와 디자인</p>
+    </div>
+    <div class="image">
+      <img src="https://picsum.photos/300" alt="사이트 미리보기" width="300">
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3번 정답</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      /* 테두리 합치기 */
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* 헤더 스타일 */
+    thead th {
+      background-color: #2196F3;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* 교시 열 스타일 */
+    tbody th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    /* 호버 효과 */
+    tbody tr:hover {
+      background-color: #e3f2fd;
+      transition: background-color 0.3s;
+    }
+
+    /* 병합된 셀 강조 */
+    .merged-cell {
+      background-color: #fff3cd;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>교시</th>
+        <th>월요일</th>
+        <th>화요일</th>
+        <th>수요일</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1교시</th>
+        <td colspan="2">수학</td>
+        <td>체육</td>
+      </tr>
+      <tr>
+        <th>2교시</th>
+        <td>국어</td>
+        <td>영어</td>
+        <td>과학</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

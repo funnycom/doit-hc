@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12번 정답</title>
+  <style>
+    body {
+      margin: 0;
+      padding-top: 60px;
+      /* 고정 헤더 높이만큼 */
+      min-height: 200vh;
+      /* 스크롤 테스트용 */
+    }
+
+    /* 상단 고정 헤더 */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    /* 배지가 있는 박스 */
+    .card {
+      position: relative;
+      /* 배지 위치 지정용 */
+      width: 300px;
+      height: 200px;
+      background-color: #f0f0f0;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    /* 박스 오른쪽 상단의 배지 */
+    .badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background-color: red;
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    /* 화면 오른쪽 하단 고정 버튼 */
+    .floating-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <header>고정 헤더</header>
+
+  <div class="card">
+    <span class="badge">New</span>
+    <h3>카드 제목</h3>
+    <p>카드 내용입니다.</p>
+  </div>
+
+  <button class="floating-button">+</button>
+</body>
+
+</html>

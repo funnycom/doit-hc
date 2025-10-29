@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5번 정답</title>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>회원가입</legend>
+
+      <label for="email">이메일:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+
+      <label for="password">비밀번호:</label>
+      <input type="password" id="password" name="password" minlength="8" required>
+      <br><br>
+
+      <fieldset>
+        <legend>뉴스레터 수신</legend>
+        <label>
+          <input type="radio" name="newsletter" value="yes" required> 수신
+        </label>
+        <label>
+          <input type="radio" name="newsletter" value="no" required> 수신 안 함
+        </label>
+      </fieldset>
+      <br>
+
+      <label>
+        <input type="checkbox" name="agree" required>
+        약관에 동의합니다 (필수)
+      </label>
+      <br><br>
+
+      <button type="submit">가입하기</button>
+    </fieldset>
+  </form>
+</body>
+
+</html>
